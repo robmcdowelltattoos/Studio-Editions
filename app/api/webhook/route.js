@@ -6,7 +6,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const resend  = new Resend(process.env.RESEND_API_KEY)
 
 // Disable body parsing — Stripe needs the raw body to verify the signature
-export const config = { api: { bodyParser: false } }
 
 export async function POST(req) {
   const body = await req.text()
