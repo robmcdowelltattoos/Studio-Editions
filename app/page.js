@@ -242,9 +242,8 @@ export default function Home() {
             <div className="product-specs">
               {[
                 ['Original size', currentProduct.originalSize],
-                ['Edition',       currentProduct.edition],
                 ['Ships',         '7–10 business days'],
-                ['Includes',      'Certificate of authenticity'],
+                ['Questions?',    'robmcdowelltattoos@gmail.com'],
               ].map(([label, val]) => (
                 <div className="spec-row" key={label}>
                   <span className="spec-label">{label}</span>
