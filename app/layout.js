@@ -1,26 +1,14 @@
-// app/layout.js
 import './globals.css'
-
 export const metadata = {
   title: 'Studio Editions — Fine Art Prints',
-  description:
-    'Limited edition archival giclée prints. Each piece printed to order on cotton rag paper by a specialist studio.',
-  openGraph: {
-    title: 'Studio Editions',
-    description: 'Limited edition fine art prints, printed to order.',
-    images: ['/prints/gold.jpg'],
-  },
+  description: 'Limited edition archival giclée prints. Each piece printed to order on cotton rag paper by a specialist studio.',
 }
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
       </head>
       <body>{children}</body>
     </html>
